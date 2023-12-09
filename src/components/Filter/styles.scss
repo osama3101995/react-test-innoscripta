@@ -1,0 +1,109 @@
+
+@import "../../partials/mixins.scss";
+
+.advanced-search-button {
+    display: flex;
+    align-items: center;
+
+    @include lg-max {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    span {
+        color: #fff;
+    }
+    &:hover {
+        span {
+            color: #000;
+        }
+        img {
+            filter: invert(0%)
+        }
+    }
+    img {
+        filter: invert(100%);
+        margin-left: 10px;
+        transform: rotate(90deg);
+        &.open {
+            
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+.filterItems {
+    margin-top: rem(30);
+    display: flex;
+
+    @include lg-max {
+        flex-direction: column;
+    }
+
+    legend {
+        font-size: rem(20);
+        font-weight: 700;
+    }
+
+    .filter-item {
+        @include lg {
+            padding: rem(10) rem(30);
+        }
+        
+    }
+    .radio-filter{
+        
+        @include lg-max {
+            margin-bottom : rem(20)
+        }
+
+        .item {
+            margin-top: rem(15);
+            label {
+                margin-left: rem(10);
+            }
+        }
+    }
+
+    .calander-filter {
+    
+    @include lg {
+        width: 50%;
+        padding-left: 0;
+    }
+
+    }
+    
+}
+
+.preference-buttons {
+    margin-top: rem(20);
+    button {
+        @include lg-max {
+        margin-bottom: rem(15);
+            width: 100%;
+        }
+
+        &:nth-child(2) {
+            @include lg {
+                margin-left: rem(20);
+            }
+        }
+    }
+}
+
+.rdrDateRangeWrapper {
+    width: 100%;
+    @include lg-max {
+        margin-bottom : rem(20)
+    }
+
+    .rdrMonth{
+        width: 100%;
+        padding: 0;
+    }
+
+
+  }
+

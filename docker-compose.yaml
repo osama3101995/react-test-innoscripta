@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  innoscriptaapp:
+    build: ./
+    container_name: react-test-innoscripta
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true

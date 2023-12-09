@@ -1,0 +1,28 @@
+@import "../../partials/mixins.scss";
+
+.searchbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @include lg-max {
+    flex-direction: column;
+  }
+  input {
+    padding: rem(10);
+
+    @include lg {
+      width: 100%;
+    }
+
+    @include lg-max {
+      margin-bottom: rem(20);
+    }
+  }
+  button {
+    @include lg {
+      margin-left: rem(20);
+    }
+
+  }
+}
