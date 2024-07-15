@@ -8,18 +8,15 @@ A React Project that makes use of the following libraries and APIs:
 - scss
 - Guardian API
 - News API
-- NYT Times Article Search API
 - auth0
 - react-router-dom
 
-**Demo:**
-https://thunderous-elf-6ee9b9.netlify.app
 
 **Run Locally**
 
 1. Open the directory of the repo and run `npm install`
 2. Then copy and paste the ".env.example" file and rename it to ".env".  
-3. Fill up the env file by creating credentials at auth0.com, newsapi.org, open-platform.theguardian.com/access, and developer.nytimes.com. Follow instructions on the main websites.
+3. Fill up the env file by creating credentials at auth0.com, newsapi.org, open-platform.theguardian.com/access Follow instructions on the main websites.
 4. run `npm start` to run the project.
 
 **Docker**
